@@ -30,7 +30,7 @@ The SynCamVideo Dataset is a multi-camera synchronized video dataset rendered us
 
 The cameras in each scene are placed on a hemispherical surface at a distance to the scene center of 3.5m - 9m. To ensure the rendered videos have minimal domain shift with real-world videos, we constraint the elevation of each camera between 0° - 45°, and the azimuth between 0° - 360°. Each camera is randomly sampled within the constraints described above, rather than using the same set of camera positions across scenes. The figure below shows an example, where the red star indicates the center point of the scene (slightly above the ground), and the videos are rendered from the synchronized cameras to capture the movements of the main subjects (a goat and a bear in the case).
 
-![extrinsic_parameters](https://github.com/user-attachments/assets/76b0bd14-4d11-4005-ac41-81481680b1c3)
+![fig_camera](https://github.com/user-attachments/assets/ae8f5345-20e9-4e88-a69d-43abc3119909)
 
 The SynCamVideo Dataset can be used to train multi-camera synchronized video generation models, inspiring applications in areas such as filmmaking and multi-view data generation for downstream tasks.
 
