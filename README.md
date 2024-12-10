@@ -2,9 +2,9 @@
 
 <div align="center">
 <div align="center" style="margin-top: 0px; margin-bottom: 0px;">
-<img src=https://github.com/user-attachments/assets/cc999f3f-33df-4f35-a8f3-dbf42839c855 width="50%"/>
+<img src=https://github.com/user-attachments/assets/b33c5b67-3881-4fa3-b853-f932eebc9c50 width="50%"/>
 </div>
-    
+
 ### [<a href="https://arxiv.org/" target="_blank">arXiv</a>] [<a href="https://jianhongbai.github.io/SynCamMaster/" target="_blank">Project Page</a>] [<a href="https://huggingface.co/datasets/KwaiVGI/SynCamVideo-Dataset/" target="_blank">Dataset</a>]
 
 _**[Jianhong Bai<sup>1*</sup>](https://jianhongbai.github.io/), [Menghan Xia<sup>2†</sup>](https://menghanxia.github.io/), [Xintao Wang<sup>2</sup>](https://xinntao.github.io/), [Ziyang Yuan<sup>3</sup>](https://scholar.google.ru/citations?user=fWxWEzsAAAAJ&hl=en), [Xiao Fu<sup>4</sup>](https://fuxiao0719.github.io/), <br>[Zuozhu Liu<sup>1</sup>](https://person.zju.edu.cn/en/lzz), [Haoji Hu<sup>1</sup>](https://person.zju.edu.cn/en/huhaoji), [Pengfei Wan<sup>2</sup>](https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en), [Di Zhang<sup>2</sup>](https://openreview.net/profile?id=~Di_ZHANG3)**_
@@ -19,7 +19,7 @@ _**[Jianhong Bai<sup>1*</sup>](https://jianhongbai.github.io/), [Menghan Xia<sup
 
 **TL;DR:** We propose SynCamMaster, an efficient method to lift pre-trained text-to-video models for open-domain multi-camera video generation from diverse viewpoints.  <br>
 
-https://github.com/user-attachments/assets/458fff94-a0b5-4fb7-b58f-e9fba8b83fad
+https://github.com/user-attachments/assets/6c3929aa-97a8-4544-8a69-3b1f7f476ad2
 
 ## 🔥 Updates
 - __[2024.12.10]__: Release the [project page](https://jianhongbai.github.io/SynCamMaster/) and the [SynCamVideo Dataset](https://huggingface.co/datasets/KwaiVGI/SynCamVideo-Dataset/).
@@ -30,7 +30,7 @@ The SynCamVideo Dataset is a multi-camera synchronized video dataset rendered us
 
 The cameras in each scene are placed on a hemispherical surface at a distance to the scene center of 3.5m - 9m. To ensure the rendered videos have minimal domain shift with real-world videos, we constraint the elevation of each camera between 0° - 45°, and the azimuth between 0° - 360°. Each camera is randomly sampled within the constraints described above, rather than using the same set of camera positions across scenes. The figure below shows an example, where the red star indicates the center point of the scene (slightly above the ground), and the videos are rendered from the synchronized cameras to capture the movements of the main subjects (a goat and a bear in the case).
 
-![fig_camera](https://github.com/user-attachments/assets/ae8f5345-20e9-4e88-a69d-43abc3119909)
+![3](https://github.com/user-attachments/assets/eceb510c-592f-4733-8487-5162d8c32253)
 
 The SynCamVideo Dataset can be used to train multi-camera synchronized video generation models, inspiring applications in areas such as filmmaking and multi-view data generation for downstream tasks.
 
@@ -69,7 +69,7 @@ python vis_cam.py --pose_file_path ./val/cameras/Hemi36_4m_0/Hemi36_4m_0_transfo
 
 The visualization script is modified from [CameraCtrl](https://github.com/hehao13/CameraCtrl/blob/main/tools/visualize_trajectory.py), thanks for their inspiring work.
 
-![extrinsic_parameters](https://github.com/user-attachments/assets/34f68f3c-ce97-4705-8cba-30075d663c40)
+![4](https://github.com/user-attachments/assets/2c588f2a-e143-4c64-8fe4-a1f1268cf25b)
 
 
 ## 🏁 Getting Started (SynCamMaster+CogVideoX)
