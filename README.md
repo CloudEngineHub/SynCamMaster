@@ -19,8 +19,7 @@ _**[Jianhong Bai<sup>1*</sup>](https://jianhongbai.github.io/), [Menghan Xia<sup
 
 **TL;DR:** We propose SynCamMaster, an efficient method to lift pre-trained text-to-video models for open-domain multi-camera video generation from diverse viewpoints.  <br>
 
-https://github.com/user-attachments/assets/42c0f059-51f5-42f8-98fc-d1630fa6bc28
-
+https://github.com/user-attachments/assets/1ecfaea8-5d87-4bb5-94fc-062f84bd67a1
 
 ## 🔥 Updates
 - __[2024.12.10]__: Release the [project page](https://jianhongbai.github.io/SynCamMaster/) and the [SynCamVideo Dataset](https://huggingface.co/datasets/KwaiVGI/SynCamVideo-Dataset/).
