@@ -119,6 +119,26 @@ hidden_states = hidden_states + gate_msa * attn_hidden_states
 python syncammaster_inference.py --model_path THUDM/CogVideoX-2b
 ```
 
+
+## 🤗 Awesome Related Works
+Feel free to explore these outstanding related works, including but not limited to:
+
+[GCD](https://gcd.cs.columbia.edu/): synthesize large-angle novel viewpoints of 4D dynamic scenes from a monocular video.
+
+[CVD](https://collaborativevideodiffusion.github.io): multi-view video generation with multiple camera trajectories.
+
+[SV4D](https://sv4d.github.io): multi-view consistent dynamic 3D content generation.
+
+Additionally, check out our "MasterFamily" projects:
+
+[3DTrajMaster](http://fuxiao0719.github.io/projects/3dtrajmaster): control multiple entity motions in 3D space (6DoF) for text-to-video generation.
+
+[StyleMaster](https://zixuan-ye.github.io/stylemaster/): enable artistic video generation and translation with reference style image.
+
+
+## Acknowledgments
+We thank Jinwen Cao, Yisong Guo, Haowen Ji, Jichao Wang, and Yi Wang from Kuaishou Technology for their invaluable help in constructing the SynCamVideo-Dataset. We thank [Guanjun Wu](https://guanjunwu.github.io/) and Jiangnan Ye for their help on running 4DGS.
+
 ## 🌟 Citation
 
 Please leave us a star 🌟 and cite our paper if you find our work helpful.
