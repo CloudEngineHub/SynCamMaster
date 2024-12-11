@@ -90,7 +90,7 @@ pip install -r requirements.txt
 **TODO: upload the pre-trained checkpoints.**
 
 ### 3. Code Snapshot
-The following code showcases the core components of SynCamMaster, namely the camera encoder, multi-view attention layer, and a linear projector within each transformer block, as demonstrated in Fig. 2 of our [paper](https://arxiv.org/abs/2412.07760).
+The following [code](https://github.com/KwaiVGI/SynCamMaster/blob/main/syncammaster/transformer_3d.py#L120-L138) showcases the core components of SynCamMaster, namely the camera encoder, multi-view attention layer, and a linear projector within each transformer block, as demonstrated in Fig. 2 of our [paper](https://arxiv.org/abs/2412.07760).
 ```python
 # 1. add pose feature
 pose = rearrange(pose, "b v d -> (b v) 1 d")
