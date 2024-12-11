@@ -19,7 +19,8 @@ _**[Jianhong Bai<sup>1*</sup>](https://jianhongbai.github.io/), [Menghan Xia<sup
 
 **TL;DR:** We propose SynCamMaster, an efficient method to lift pre-trained text-to-video models for open-domain multi-camera video generation from diverse viewpoints.  <br>
 
-https://github.com/user-attachments/assets/6c3929aa-97a8-4544-8a69-3b1f7f476ad2
+https://github.com/user-attachments/assets/42c0f059-51f5-42f8-98fc-d1630fa6bc28
+
 
 ## 🔥 Updates
 - __[2024.12.10]__: Release the [project page](https://jianhongbai.github.io/SynCamMaster/) and the [SynCamVideo Dataset](https://huggingface.co/datasets/KwaiVGI/SynCamVideo-Dataset/).
@@ -30,7 +31,7 @@ The SynCamVideo Dataset is a multi-camera synchronized video dataset rendered us
 
 The cameras in each scene are placed on a hemispherical surface at a distance to the scene center of 3.5m - 9m. To ensure the rendered videos have minimal domain shift with real-world videos, we constraint the elevation of each camera between 0° - 45°, and the azimuth between 0° - 360°. Each camera is randomly sampled within the constraints described above, rather than using the same set of camera positions across scenes. The figure below shows an example, where the red star indicates the center point of the scene (slightly above the ground), and the videos are rendered from the synchronized cameras to capture the movements of the main subjects (a goat and a bear in the case).
 
-![3](https://github.com/user-attachments/assets/eceb510c-592f-4733-8487-5162d8c32253)
+![3_resized](https://github.com/user-attachments/assets/01e2671c-9fa2-4290-b43e-14905b4c9685)
 
 The SynCamVideo Dataset can be used to train multi-camera synchronized video generation models, inspiring applications in areas such as filmmaking and multi-view data generation for downstream tasks.
 
