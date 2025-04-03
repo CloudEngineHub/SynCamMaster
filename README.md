@@ -13,6 +13,8 @@ _**[Jianhong Bai<sup>1*</sup>](https://jianhongbai.github.io/), [Menghan Xia<sup
 
 <sup>1</sup>Zhejiang University, <sup>2</sup>Kuaishou Technology, <sup>3</sup>Tsinghua University, <sup>4</sup>CUHK.
 
+**ICLR 2025**
+
 </div>
 
 ## 📖 Introduction
