@@ -20,8 +20,9 @@ _**[Jianhong Bai<sup>1*</sup>](https://jianhongbai.github.io/), [Menghan Xia<sup
 **Important Note:** This open-source repository is intended to provide a reference implementation. Due to the difference in the underlying T2V model's performance, the open-source version may not achieve the same performance as the model in our paper.
 
 ## 🔥 Updates
+- __[2025.04.15]__: Please feel free to explore our subsequent work, [ReCamMaster](https://github.com/KwaiVGI/ReCamMaster).
 - __[2025.04.15]__: Update a new version of the [SynCamVideo Dataset](https://huggingface.co/datasets/KwaiVGI/SynCamVideo-Dataset).
-- __[2025.04.15]__: Release the [training and inference code](https://), [model checkpoint](https://).
+- __[2025.04.15]__: Release the [training and inference code](https://github.com/KwaiVGI/SynCamMaster?tab=readme-ov-file#%EF%B8%8F-code-syncammaster--wan21-inference--training), [model checkpoint](https://huggingface.co/KwaiVGI/SynCamMaster-Wan2.1/blob/main/step20000.ckpt).
 - __[2024.12.10]__: Release the [project page](https://jianhongbai.github.io/SynCamMaster/) and the [SynCamVideo Dataset](https://huggingface.co/datasets/KwaiVGI/SynCamVideo-Dataset/).
   
 ## 📖 Introduction
