@@ -59,9 +59,8 @@ class CameraPoseVisualizer:
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--pose_file_path', default='./SynCamVideo-Dataset/val/cameras/Hemi36_4m_0/Hemi36_4m_0.json', type=str, help='the path of the pose file')
-    parser.add_argument('--hw_ratio', default=16/16, type=float, help='the height over width of the film plane')
-    parser.add_argument('--num_cameras', type=int, default=36)
+    parser.add_argument('--pose_file_path', default='./example_test_data/cameras/camera_extrinsics.json', type=str, help='the path of the pose file')
+    parser.add_argument('--hw_ratio', default=9/16, type=float, help='the height over width of the film plane')
     parser.add_argument('--base_xval', type=float, default=0.08)
     parser.add_argument('--zval', type=float, default=0.15)
     parser.add_argument('--x_min', type=float, default=-2)
@@ -103,8 +102,7 @@ if __name__ == '__main__':
 
     with open(args.pose_file_path, 'r') as file:
         data = json.load(file)
-
-    cameras = [parse_matrix(data[name]) for name in sorted(data.keys())]
+    cameras = [parse_matrix(data[f"frame0"][f"cam{cam_idx:02d}"]) for cam_idx in range(1, 11)]
     cameras = np.transpose(np.stack(cameras), (0, 2, 1))
 
     w2cs = []
@@ -114,17 +112,16 @@ if __name__ == '__main__':
         cam = cam[:, [1, 2, 0, 3]]
         cam[:3, 1] *= -1.
         w2cs.append(np.linalg.inv(cam))
-
-    w2cs = w2cs[:args.num_cameras]
-    scale = max(max(abs(w2c[:3, 3])) for w2c in w2cs)
-    for w2c in w2cs:
-        w2c[:3, 3] /= scale
     transform_matrix = np.array([[1, 0, 0, 0], [0, 0, 1, 0], [0, -1, 0, 0], [0, 0, 0, 1]])
     c2ws = get_c2w(w2cs, transform_matrix, True)
+    scale = max(max(abs(c2w[:3, 3])) for c2w in c2ws)
+    if scale > 1e-3:  # otherwise, pan or tilt
+        for c2w in c2ws:
+            c2w[:3, 3] /= scale
 
     visualizer = CameraPoseVisualizer([args.x_min, args.x_max], [args.y_min, args.y_max], [args.z_min, args.z_max])
     for frame_idx, c2w in enumerate(c2ws):
-        visualizer.extrinsic2pyramid(c2w, frame_idx / args.num_cameras, hw_ratio=args.hw_ratio, base_xval=args.base_xval,
+        visualizer.extrinsic2pyramid(c2w, frame_idx / len(cameras), hw_ratio=args.hw_ratio, base_xval=args.base_xval,
                                      zval=(args.zval))
-    visualizer.colorbar(args.num_cameras)
+    visualizer.colorbar(len(cameras))
     visualizer.show()
