@@ -220,13 +220,10 @@ We thank Jinwen Cao, Yisong Guo, Haowen Ji, Jichao Wang, and Yi Wang from Kuaish
 
 Please leave us a star 🌟 and cite our paper if you find our work helpful.
 ```
-@misc{bai2024syncammaster,
-      title={SynCamMaster: Synchronizing Multi-Camera Video Generation from Diverse Viewpoints}, 
-      author={Jianhong Bai and Menghan Xia and Xintao Wang and Ziyang Yuan and Xiao Fu and Zuozhu Liu and Haoji Hu and Pengfei Wan and Di Zhang},
-      year={2024},
-      eprint={2412.07760},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.07760}, 
+@article{bai2024syncammaster,
+  title={SynCamMaster: Synchronizing Multi-Camera Video Generation from Diverse Viewpoints},
+  author={Bai, Jianhong and Xia, Menghan and Wang, Xintao and Yuan, Ziyang and Fu, Xiao and Liu, Zuozhu and Hu, Haoji and Wan, Pengfei and Zhang, Di},
+  journal={arXiv preprint arXiv:2412.07760},
+  year={2024}
 }
 ```
